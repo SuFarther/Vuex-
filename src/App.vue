@@ -1,30 +1,28 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+       <home></home>
+       <about></about>
+       <btn></btn>
+       <home2></home2>
+       <about2></about2>
+       <btn2></btn2>
   </div>
-  <router-view/>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+   import Home from "@/views/Home";
+   import About from '@/views/About';
+   import Btn from "@/views/Btn";
+   import Home2  from "@/views/Home2";
+   import About2 from "@/views/About2";
+   import Btn2 from "@/views/Btn2";
+   export default {
+       components: {
+         Home,
+         About,
+         Btn,
+         Home2,
+         About2,
+         Btn2
+       }
+   }
+</script>
